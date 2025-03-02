@@ -10,28 +10,37 @@
 
 <body>
 
-    <div>
-        <h1 class="title">Calculator</h1>
-    </div>
+    <div class="table">
 
-    <div class="grid">
-        <div class="box">
-            <input type="text" id="number">
+        <div class="border">
+            <div>
+                <div class="display">0</div>
+            </div>
+
+            <div class="buttons">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="clear" data-action="clear">C</button>
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button data-action="add">+</button>
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button data-action="subtract">-</button>
+
+                <button class="zero">0</button>
+                <button class="equal" data-action="equal">=</button>
+                <button data-action="multiply">X</button>
+                <button class="divide" data-action="divide">/</button>
+            </div>
         </div>
 
-        <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-        </div>
-    </div>
-
-    <div>
-        <button onclick="addition()">Click me</button>
-        <button onclick="reset()">Reset</button>
-    </div>
-
-    <script src="js.js"></script>
+        <script src="js.js"></script>
 </body>
 
 </html>
