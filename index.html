@@ -11,32 +11,28 @@
 <body>
 
     <div class="table">
+        <div id="border">
+            <input readonly id="display">
+            <div id="buttons">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button class="clear" onclick="clearDisplay()">C</button>
 
-        <div class="border">
-            <div>
-                <div class="display">0</div>
-            </div>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('+')">+</button>
 
-            <div class="buttons">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="clear" data-action="clear">C</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('-')">-</button>
 
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button data-action="add">+</button>
-
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button data-action="subtract">-</button>
-
-                <button class="zero">0</button>
-                <button class="equal" data-action="equal">=</button>
-                <button data-action="multiply">X</button>
-                <button class="divide" data-action="divide">/</button>
+                <button class="zero" onclick="appendToDisplay('0')">0</button>
+                <button class="equal" onclick="calculate()">=</button>
+                <button onclick="appendToDisplay('X')">X</button>
+                <button class="divide" onclick="appendToDisplay('/')">/</button>
             </div>
         </div>
 
