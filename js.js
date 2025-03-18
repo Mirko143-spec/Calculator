@@ -18,6 +18,7 @@ function stripLast(value) {
     return value
 }
 
+
 function calculate() {
     let value = stripLast(display.value)
     if (value.includes("+")) {
